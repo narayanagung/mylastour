@@ -10,7 +10,7 @@ function getImageUrl(slide) {
 
 <template>
 	<hgroup>
-		<h1>🗺️map</h1>
+		<h1>map</h1>
 		<small>geolocation for each pictures.</small>
 	</hgroup>
 	<section class="map-wrap">
