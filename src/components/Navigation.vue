@@ -11,6 +11,9 @@ import { RouterLink } from "vue-router";
 			<li>
 				<RouterLink class="nav-link" to="/map">map</RouterLink>
 			</li>
+			<li>
+				<RouterLink class="nav-link" to="/about">about</RouterLink>
+			</li>
 		</ul>
 	</nav>
 </template>

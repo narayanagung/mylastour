@@ -2,7 +2,7 @@
 
 <template>
 	<div class="header">
-		<h1>#️mylastour</h1>
+		<h1>mylastour</h1>
 		<small>endless journey.</small>
 	</div>
 </template>

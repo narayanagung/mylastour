@@ -29,6 +29,19 @@ const sortToggle = () => {
 function getImageUrl(image) {
 	return new URL(`../assets/Grid/${image}.jpg`, import.meta.url).href;
 }
+
+const isModalOpen = ref(false);
+const selectedImage = ref(null);
+
+const openModal = (image) => {
+	selectedImage.value = image;
+	isModalOpen.value = true;
+};
+
+const closeModal = () => {
+	isModalOpen.value = false;
+	selectedImage.value = null;
+};
 </script>
 
 <template>
@@ -38,22 +51,54 @@ function getImageUrl(image) {
 		</button>
 	</div>
 	<div class="grid">
-		<img v-for="(image, index) in sortedImages" :key="index" :src="getImageUrl(image)" loading="lazy" alt="Grid Images" />
+		<img v-for="(image, index) in sortedImages" :key="index" :src="getImageUrl(image)" @click="openModal(image)" loading="lazy" alt="Grid Images" />
+	</div>
+	<div v-if="isModalOpen" class="modal" @click.self="closeModal">
+		<div class="modal-content">
+			<span class="close" @click="closeModal"><Icon icon="mdi:close" width="30" height="30" /></span>
+			<img :src="getImageUrl(selectedImage)" alt="Selected Grid Image" />
+			<!-- <p>Some description or additional content for {{ selectedImage }}</p> -->
+		</div>
 	</div>
 </template>
 
 <style lang="scss" scoped>
+.close {
+	float: right;
+	cursor: pointer;
+}
+
+.modal {
+	position: fixed;
+	z-index: 1;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+	background-color: rgba(0, 0, 0, 0.8);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	img {
+		border-radius: 0.25rem;
+		border: 2px solid hsl(0, 0%, 100%);
+	}
+}
+
+.modal-content {
+	padding: 0.5rem;
+	width: 100%;
+	max-width: 40rem;
+	border-radius: 0.25rem;
+}
+
 .btn-wrap {
 	display: flex;
 	justify-content: center;
 	padding-top: 1rem;
 	padding-bottom: 1rem;
-
-	:hover {
-		transition: 150ms;
-		background-color: #fff;
-		color: #000;
-	}
 
 	button {
 		font-weight: 500;
@@ -67,7 +112,6 @@ function getImageUrl(image) {
 		outline: 1px solid #fff;
 		border-radius: 4px;
 		padding: 0.3rem 0.6rem;
-		transition: 150ms;
 	}
 }
 @media screen and (min-width: 700px) {
