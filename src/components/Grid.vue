@@ -51,15 +51,25 @@ const closeModal = () => {
 		</button>
 	</div>
 	<div class="grid">
-		<img v-for="(image, index) in sortedImages" :key="index" :src="getImageUrl(image)" @click="openModal(image)" loading="lazy" alt="Grid Images" />
+		<img
+			v-for="(image, index) in sortedImages"
+			:key="index"
+			:src="getImageUrl(image)"
+			@click="openModal(image)"
+			loading="lazy"
+			alt="Grid Images"
+			class="grid-image"
+		/>
 	</div>
-	<div v-if="isModalOpen" class="modal" @click.self="closeModal">
-		<div class="modal-content">
-			<span class="close" @click="closeModal"><Icon icon="mdi:close" width="30" height="30" /></span>
-			<img :src="getImageUrl(selectedImage)" alt="Selected Grid Image" />
-			<!-- <p>Some description or additional content for {{ selectedImage }}</p> -->
+	<transition name="fade-zoom">
+		<div v-if="isModalOpen" class="modal" @click.self="closeModal">
+			<div class="modal-content">
+				<span class="close" @click="closeModal"><Icon icon="mdi:close" width="30" height="30" /></span>
+				<img :src="getImageUrl(selectedImage)" alt="Selected Grid Image" />
+				<p class="watermark">#mylastour</p>
+			</div>
 		</div>
-	</div>
+	</transition>
 </template>
 
 <style lang="scss" scoped>
@@ -69,6 +79,7 @@ const closeModal = () => {
 }
 
 .modal {
+	cursor: zoom-out;
 	position: fixed;
 	z-index: 1;
 	left: 0;
@@ -92,13 +103,21 @@ const closeModal = () => {
 	width: 100%;
 	max-width: 40rem;
 	border-radius: 0.25rem;
+
+	img {
+		cursor: default;
+	}
+	.watermark {
+		cursor: text;
+		padding-top: 0.3rem;
+	}
 }
 
 .btn-wrap {
 	display: flex;
 	justify-content: center;
 	padding-top: 1rem;
-	padding-bottom: 1rem;
+	padding-bottom: 2rem;
 
 	button {
 		font-weight: 500;
@@ -114,6 +133,41 @@ const closeModal = () => {
 		padding: 0.3rem 0.6rem;
 	}
 }
+
+.grid {
+	img {
+		border: 2px solid transparent;
+		border-radius: 0.25rem;
+	}
+}
+
+.grid-image {
+	cursor: zoom-in;
+
+	&:hover {
+		// transform: scale(0.99);
+		border: 2px solid hsl(0, 0%, 100%);
+	}
+}
+
+// animation for modal open/close
+.fade-zoom-enter-active,
+.fade-zoom-leave-active {
+	transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.fade-zoom-enter-from,
+.fade-zoom-leave-to {
+	opacity: 0;
+	transform: scale(0.1);
+}
+
+.fade-zoom-enter-to,
+.fade-zoom-leave-from {
+	opacity: 1;
+	transform: scale(1);
+}
+
 @media screen and (min-width: 700px) {
 	.grid {
 		display: grid;

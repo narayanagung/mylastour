@@ -1,10 +1,10 @@
 <template>
 	<hgroup>
 		<h1>memories</h1>
-		<small>geolocation for each location.</small>
+		<small>geolocation for each photos.</small>
 	</hgroup>
 	<section class="map-wrap">
-		<iframe src="https://www.google.com/maps/d/u/0/embed?mid=1xejczkd6NzBtjvTzyDgiz1OTK2C0Jj4&ehbc=2E312F&noprof=1" width="1000" height="800"></iframe>
+		<iframe src="https://www.google.com/maps/d/u/0/embed?mid=1xejczkd6NzBtjvTzyDgiz1OTK2C0Jj4&ehbc=2E312F&noprof=1" width="825" height="525"></iframe>
 	</section>
 </template>
 
@@ -27,6 +27,7 @@ hgroup {
 
 	iframe {
 		max-width: 100%;
+		border: none;
 	}
 }
 </style>
