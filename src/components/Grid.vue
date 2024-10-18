@@ -79,7 +79,6 @@ const closeModal = () => {
 }
 
 .modal {
-	cursor: zoom-out;
 	position: fixed;
 	z-index: 1;
 	left: 0;
@@ -128,9 +127,15 @@ const closeModal = () => {
 		color: white;
 		background: none;
 		cursor: pointer;
-		outline: 1px solid #fff;
-		border-radius: 4px;
+		outline: 2px solid #fff;
+		border-radius: 0.25rem;
 		padding: 0.3rem 0.6rem;
+		transition: 150ms;
+
+		&:hover {
+			outline: 2px solid hsl(200, 100%, 50%);
+			transition: 150ms;
+		}
 	}
 }
 
@@ -142,30 +147,30 @@ const closeModal = () => {
 }
 
 .grid-image {
-	cursor: zoom-in;
-
+	transition: 500ms;
 	&:hover {
 		// transform: scale(0.99);
 		border: 2px solid hsl(0, 0%, 100%);
+		transition: 500ms;
 	}
 }
 
 // animation for modal open/close
 .fade-zoom-enter-active,
 .fade-zoom-leave-active {
-	transition: opacity 0.3s ease, transform 0.3s ease;
+	transition: opacity 0.4s, transform 0.4s;
 }
 
 .fade-zoom-enter-from,
 .fade-zoom-leave-to {
 	opacity: 0;
-	transform: scale(0.1);
+	transform: translateY(100%);
 }
 
 .fade-zoom-enter-to,
 .fade-zoom-leave-from {
 	opacity: 1;
-	transform: scale(1);
+	transform: translateY(0) scale(1);
 }
 
 @media screen and (min-width: 700px) {
@@ -183,9 +188,25 @@ const closeModal = () => {
 
 @media screen and (max-width: 700px) {
 	.grid {
-		gap: 0.25rem;
-		padding-inline: 0.25rem;
+		gap: 0.1rem;
+		padding-inline: 0.1rem;
 		display: grid;
+	}
+	.grid-image {
+		&:hover {
+			border: solid 1px transparent;
+		}
+	}
+	.modal-content {
+		padding: 0.7rem;
+	}
+
+	.btn-wrap {
+		button {
+			&:hover {
+				outline: 2px solid hsl(0, 0%, 100%);
+			}
+		}
 	}
 }
 </style>

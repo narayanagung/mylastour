@@ -9,8 +9,12 @@
 </template>
 
 <style lang="scss" scoped>
-$carousel-height: 100vh;
-$slide-width: 1200px;
+// $carousel-height: 100vh;
+// $slide-width: 1200px;
+
+h1 {
+	text-shadow: 4px 4px hsl(200, 100%, 15%);
+}
 
 hgroup {
 	display: grid;
@@ -27,7 +31,8 @@ hgroup {
 
 	iframe {
 		max-width: 100%;
-		border: none;
+		border: 2px solid hsl(0, 0%, 100%);
+		border-radius: 0.25rem;
 	}
 }
 </style>

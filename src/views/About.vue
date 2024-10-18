@@ -12,7 +12,7 @@
 import { ref, onMounted } from "vue";
 
 // change this to whenever you like. new Date(year, month[0 indexed so january is 0 and so on], date)
-const targetDate = new Date(2024, 9, 14);
+const targetDate = new Date(2024, 9, 31);
 
 const formattedCountdown = ref("");
 const formattedDays = ref("");
@@ -29,7 +29,7 @@ const updateCountdown = () => {
 
 	if (difference <= 0) {
 		// stop the countdown if time has passed
-		formattedCountdown.value = "00H : 00m : 00s";
+		formattedCountdown.value = "0H : 0m : 0s";
 		formattedDays.value = "it's here";
 		countdownEnded.value = true; // mark countdown as ended
 		clearInterval(intervalId); // stop the interval
@@ -55,34 +55,34 @@ onMounted(() => {
 	<div class="announcement">
 		<!-- temporary div -->
 		<div class="content">
-			<img src="..\assets\Img\glt.webp" alt="glt manga" />
-			<p class="time">
-				<span>⏳<b>coming soon</b></span>
-			</p>
+			<p style="padding-bottom: 1rem; text-align: center">release date</p>
+			<a href="https://www.instagram.com/p/DBGgLvvy8Mi/" target="_blank"><img src="..\assets\Img\gltelex.webp" alt="glt manga" /></a>
+			<p class="time">coming soon</p>
 		</div>
+		<!-- main div -->
 		<!-- <div class="content">
-			<img src="..\assets\Img\glt.webp" alt="glt manga" />
+			<a href="https://www.instagram.com/p/DBGgLvvy8Mi/" target="_blank"><img src="..\assets\Img\gltelex.webp" alt="glt manga" /></a>
 			<p class="time" v-if="!countdownEnded">
-				{{ formattedDays }} Days until release <br />
-				{{ formattedCountdown }}
+				{{ formattedDays }} days until release <br />
+				<b>{{ formattedCountdown }}</b>
 			</p>
 			<p class="time" v-else-if="countdownEnded">
 				{{ formattedDays }} <br />
-				{{ formattedCountdown }} <br />
+				<b class="timeout">{{ formattedCountdown }}</b> <br />
 				<span>endless journey await</span>
 			</p>
 		</div> -->
 	</div>
 	<hgroup>
-		<h2>why?</h2>
+		<h2><summary>synopsis</summary></h2>
 		<!-- <small>...</small> -->
 	</hgroup>
 	<section>
 		<!-- <h2>summary</h2> -->
 		<p>
-			"as they traverse a desolate world aboard their motorized vehicle. the world they inhabit is on the brink of total collapse, with vast, decaying
+			as they traverse a desolate world aboard their motorized vehicle. the world they inhabit is on the brink of total collapse, with vast, decaying
 			cityscapes and empty factories devoid of life. society as they once knew it has long disappeared, leaving them to scavenge for food, fuel, and
-			shelter while exploring the ruins of civilization."
+			shelter while exploring the ruins of civilization.
 		</p>
 	</section>
 	<!-- <section class="carousel-section">
@@ -100,15 +100,25 @@ onMounted(() => {
 // $carousel-height: 100vh;
 // $slide-width: 1200px;
 
+h2 {
+	text-shadow: 4px 4px hsl(200, 100%, 15%);
+}
+
 .announcement {
 	display: grid;
 	place-content: center;
 	font-size: 2rem;
 	padding-block: 1rem;
+	margin-inline: 1rem;
 	// background-color: hsla(208, 100%, 97%, 0.384);
 
 	.time {
 		padding-top: 1rem;
+		text-align: center;
+
+		.timeout {
+			color: hsl(200, 100%, 50%);
+		}
 
 		span {
 			font-size: 1.5rem;
@@ -117,16 +127,19 @@ onMounted(() => {
 
 	img {
 		display: block;
-		width: 10rem;
+		width: 15rem;
 		margin-left: auto;
 		margin-right: auto;
+		border: 2px solid hsl(0, 0%, 100%);
+		border-radius: 0.25rem;
+		box-shadow: 4px 4px hsl(200, 100%, 15%);
 	}
 
 	.content {
 		padding-block: 1rem;
 		padding-inline: 10rem;
 		text-align: center;
-		background: linear-gradient(45deg, hsla(240, 100%, 10%, 0.5), hsl(0, 0%, 5%), hsla(240, 100%, 10%, 0.5), hsl(0, 0%, 5%));
+		// background: linear-gradient(45deg, hsla(240, 100%, 10%, 0.5), hsl(0, 0%, 5%), hsla(240, 100%, 10%, 0.5), hsl(0, 0%, 5%));
 		background-repeat: no-repeat;
 		background-size: 250%;
 		// border-top: hsla(0, 0%, 100%, 0.5) solid 1rem;
@@ -137,7 +150,9 @@ onMounted(() => {
 hgroup {
 	display: grid;
 	place-content: center;
-	padding: 1rem;
+	padding-top: 0;
+	padding-bottom: 1rem;
+	padding-inline: 1rem;
 	font-size: 1.25rem;
 
 	span {

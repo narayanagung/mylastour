@@ -22,10 +22,12 @@ import { RouterLink } from "vue-router";
 nav {
 	font-size: 1.25rem;
 	padding: 1rem;
+
 	ul {
 		display: flex;
 		justify-content: center;
 		gap: 1rem;
+
 		li {
 			list-style-type: none;
 
