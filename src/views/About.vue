@@ -1,18 +1,9 @@
 <script setup>
-// carousel setup
-// import Carousel from "../components/Carousel/Index.vue";
-// import Slide from "../components/Carousel/Slide.vue";
-
-// const carouselSlides = ["tkmz_1", "tkmz_2", "tkmz_3"];
-// function getImageUrl(slide) {
-// 	return new URL(`../assets/Carousel/${slide}.jpg`, import.meta.url).href;
-// }
-
 // countdown setup
 import { ref, onMounted } from "vue";
 
 // change this to whenever you like. new Date(year, month[0 indexed so january is 0 and so on], date)
-const targetDate = new Date(2024, 9, 31);
+const targetDate = new Date(2024, 9, 30);
 
 const formattedCountdown = ref("");
 const formattedDays = ref("");
@@ -54,14 +45,17 @@ onMounted(() => {
 <template>
 	<div class="announcement">
 		<!-- temporary div -->
-		<div class="content">
+		<!-- <div class="content">
 			<p style="padding-bottom: 1rem; text-align: center">release date</p>
 			<a href="https://www.instagram.com/p/DBGgLvvy8Mi/" target="_blank"><img src="..\assets\Img\gltelex.webp" alt="glt manga" /></a>
 			<p class="time">coming soon</p>
-		</div>
+		</div> -->
 		<!-- main div -->
-		<!-- <div class="content">
-			<a href="https://www.instagram.com/p/DBGgLvvy8Mi/" target="_blank"><img src="..\assets\Img\gltelex.webp" alt="glt manga" /></a>
+		<div class="content">
+			<h2>attention!</h2>
+			<a href="https://www.instagram.com/p/DBGgLvvy8Mi/" title="Published by Elex Media" target="_blank"
+				><img src="..\assets\Img\gltelex.webp" alt="glt manga"
+			/></a>
 			<p class="time" v-if="!countdownEnded">
 				{{ formattedDays }} days until release <br />
 				<b>{{ formattedCountdown }}</b>
@@ -71,37 +65,74 @@ onMounted(() => {
 				<b class="timeout">{{ formattedCountdown }}</b> <br />
 				<span>endless journey await</span>
 			</p>
-		</div> -->
+		</div>
 	</div>
 	<hgroup>
 		<h2><summary>synopsis</summary></h2>
-		<!-- <small>...</small> -->
 	</hgroup>
 	<section>
-		<!-- <h2>summary</h2> -->
 		<p>
-			as they traverse a desolate world aboard their motorized vehicle. the world they inhabit is on the brink of total collapse, with vast, decaying
-			cityscapes and empty factories devoid of life. society as they once knew it has long disappeared, leaving them to scavenge for food, fuel, and
-			shelter while exploring the ruins of civilization.
+			<i>
+				"as they traverse a desolate world aboard their motorized vehicle. the world they inhabit is on the brink of total collapse, with vast, decaying
+				cityscapes and empty factories devoid of life. society as they once knew it has long disappeared, leaving them to scavenge for food, fuel, and
+				shelter while exploring the ruins of civilization"
+			</i>
+		</p>
+		<div class="image-stack">
+			<!-- <img src="../assets/Img/01.jpg" alt="volume cover" /> -->
+			<img src="../assets/Img/02.jpg" alt="volume cover" />
+			<img src="../assets/Img/03.jpg" alt="volume cover" />
+			<img src="../assets/Img/04.jpg" alt="volume cover" />
+			<img src="../assets/Img/05.jpg" alt="volume cover" />
+			<img src="../assets/Img/06.jpg" alt="volume cover" />
+		</div>
+	</section>
+	<section>
+		<hgroup>
+			<h2><summary>how is this relevant?</summary></h2>
+			<!-- <small>...</small> -->
+		</hgroup>
+		<p>
+			<i>Girl’s Last Tour</i> is a six-volume comic by Tsukumizu that profoundly changed the way I live in this world. During some of the most exhausting
+			and fearful moments of life, this comic influenced me to let go and not overthink the small details of life, saving me from many of the dangers that
+			were constantly on my mind. The Instagram account, along with the theme and photos I post, stemmed from my decision to approach social media more
+			honestly, no longer obsessing over the "image" that used to make me anxious and fearful about what to share with others.
+		</p>
+		<br />
+		<p>
+			This shift began during what I consider the worst year I’ve ever experienced—and I’m sure many would agree—2020, the start of the COVID-19 pandemic.
+			Having so much free time didn’t necessarily bring happiness, especially since school at that time didn’t feel like learning at all. After graduating
+			from vocational school, working immediately became a necessity due to our financial situation, which was, well, not great.
+		</p>
+		<br />
+		<p>
+			By 2021, fortunately, I found that working was much more enjoyable than I had expected. Yes, there were stressful and overwhelming moments, just
+			like in school, but at least there was compensation for the stress in the end of each month. Of course, I couldn’t use all of it for
+			myself—definitely not—but it was enough to cover a month’s worth of fuel for my motorcycle and maybe a little for snacks.
+		</p>
+		<br />
+		<p>
+			Commuting to work Monday through Friday and then traveling home from my rented room over the course of a year really made me fall in love with
+			riding motorcycles. It all started with my daily school commute in 2016, covering about 16 kilometers a day, and then evolved into weekly trips of
+			around 120 kilometers to return home from where I was working in 2021, I became very familiar with the roads I traveled regularly.
+		</p>
+		<br />
+		<p>
+			That’s when an idea struck me "If I can ride 120 kilometers a week on my motorcycle, wouldn’t it be easy to ride all around Bali in just three
+			days?" I thought to myself. And with that thought, combined with my love for traveling, I began #mylastour.
 		</p>
 	</section>
-	<!-- <section class="carousel-section">
-		<Carousel :pagination="false" v-slot="{ currentSlide }" class="carousel">
-			<Slide v-for="(slide, index) in carouselSlides" :key="index">
-				<div v-show="currentSlide === index + 1" class="slide-info">
-					<img :src="getImageUrl(slide)" alt="Carousel Images" />
-				</div>
-			</Slide>
-		</Carousel>
-	</section> -->
+	<section>
+		<div class="foot">
+			<img src="../assets/Img/glt.png" title="All credit to Tsukumizu" alt="glt best panel" />
+		</div>
+	</section>
 </template>
 
 <style lang="scss" scoped>
-// $carousel-height: 100vh;
-// $slide-width: 1200px;
-
 h2 {
 	text-shadow: 4px 4px hsl(200, 100%, 15%);
+	text-align: center;
 }
 
 .announcement {
@@ -132,18 +163,28 @@ h2 {
 		margin-right: auto;
 		border: 2px solid hsl(0, 0%, 100%);
 		border-radius: 0.25rem;
-		box-shadow: 4px 4px hsl(200, 100%, 15%);
-	}
+		box-shadow: 0px 0px 20px hsla(0, 0%, 100%, 0);
+		transition: 500ms;
 
-	.content {
-		padding-block: 1rem;
-		padding-inline: 10rem;
-		text-align: center;
-		// background: linear-gradient(45deg, hsla(240, 100%, 10%, 0.5), hsl(0, 0%, 5%), hsla(240, 100%, 10%, 0.5), hsl(0, 0%, 5%));
-		background-repeat: no-repeat;
-		background-size: 250%;
-		// border-top: hsla(0, 0%, 100%, 0.5) solid 1rem;
-		// box-shadow: 0px 5px 15px 5px rgba(0, 85, 255, 0.1);
+		&:hover {
+			box-shadow: 0px 0px 35px hsl(0, 0%, 100%);
+			transition: 500ms;
+		}
+	}
+}
+
+.content {
+	padding-block: 1rem;
+	padding-inline: 10rem;
+	text-align: center;
+	// background: linear-gradient(45deg, hsla(240, 100%, 10%, 0.5), hsl(0, 0%, 5%), hsla(240, 100%, 10%, 0.5), hsl(0, 0%, 5%));
+	background-repeat: no-repeat;
+	background-size: 250%;
+	// border-top: hsla(0, 0%, 100%, 0.5) solid 1rem;
+	// box-shadow: 0px 5px 15px 5px rgba(0, 85, 255, 0.1);
+
+	h2 {
+		padding-bottom: 1rem;
 	}
 }
 
@@ -160,12 +201,39 @@ hgroup {
 	}
 }
 
+.image-stack {
+	display: flex;
+	width: 20%;
+	padding-block: 2rem;
+}
+
+section .foot {
+	display: flex;
+	justify-content: center;
+	padding-top: 2rem;
+
+	img {
+		width: 100%;
+		border: 2px solid hsl(0, 0%, 100%);
+		border-radius: 0.25rem;
+	}
+}
+
 @media screen and (min-width: 700px) {
 	section {
 		padding-inline: 25rem;
 	}
+
 	p {
 		text-align: justify;
+	}
+
+	.image-stack {
+		padding-block: 2rem;
+	}
+
+	section .foot {
+		padding-top: 2rem;
 	}
 }
 
@@ -180,39 +248,12 @@ hgroup {
 		padding-inline: 2rem;
 	}
 
-	p {
-		text-align: center;
+	.image-stack {
+		padding-block: 1rem;
+	}
+
+	section .foot {
+		padding-top: 1rem;
 	}
 }
-
-// .carousel-section {
-// 	.carousel {
-// 		position: relative;
-// 		max-height: 100vh;
-// 		height: $carousel-height;
-
-// 		@media screen and (max-width: 1000px) {
-// 			max-height: 50vh;
-// 			height: 50vh;
-// 		}
-
-// 		.slide-info {
-// 			position: absolute;
-// 			top: 50%;
-// 			left: 50%;
-// 			transform: translate(-50%, -50%);
-// 			width: $slide-width;
-// 			max-height: 100%;
-// 			text-align: center;
-
-// 			@media screen and (max-width: 1000px) {
-// 				width: 100%;
-// 			}
-
-// 			img {
-// 				object-fit: cover;
-// 			}
-// 		}
-// 	}
-// }
 </style>
