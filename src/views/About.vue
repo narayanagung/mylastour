@@ -67,6 +67,7 @@ onMounted(() => {
 			</p>
 		</div>
 	</div>
+	<hr style="width: 40%; margin: 1rem auto" />
 	<hgroup>
 		<h2><summary>synopsis</summary></h2>
 	</hgroup>
@@ -87,6 +88,7 @@ onMounted(() => {
 			<img src="../assets/Img/06.jpg" alt="volume cover" />
 		</div>
 	</section>
+	<hr style="width: 45%; margin: 1rem auto" />
 	<section>
 		<hgroup>
 			<h2><summary>how is this relevant?</summary></h2>
@@ -138,7 +140,7 @@ h2 {
 .announcement {
 	display: grid;
 	place-content: center;
-	font-size: 2rem;
+	font-size: 1.8rem;
 	padding-block: 1rem;
 	margin-inline: 1rem;
 	// background-color: hsla(208, 100%, 97%, 0.384);
@@ -148,6 +150,7 @@ h2 {
 		text-align: center;
 
 		.timeout {
+			font-size: 1.8rem;
 			color: hsl(200, 100%, 50%);
 		}
 
@@ -174,7 +177,6 @@ h2 {
 }
 
 .content {
-	padding-block: 1rem;
 	padding-inline: 10rem;
 	text-align: center;
 	// background: linear-gradient(45deg, hsla(240, 100%, 10%, 0.5), hsl(0, 0%, 5%), hsla(240, 100%, 10%, 0.5), hsl(0, 0%, 5%));
