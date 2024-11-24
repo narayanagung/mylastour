@@ -149,8 +149,8 @@ const closeModal = () => {
 .grid-image {
 	transition: 500ms;
 	&:hover {
-		// transform: scale(0.99);
-		border: 2px solid hsl(0, 0%, 100%);
+		transform: scale(0.99);
+		// border: 2px solid hsl(0, 0%, 100%);
 		transition: 500ms;
 	}
 }

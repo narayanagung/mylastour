@@ -23,7 +23,7 @@ import Footer from "./components/Footer.vue";
 }
 
 #app {
-	background: linear-gradient(45deg, hsla(240, 100%, 10%, 0.5), hsl(0, 0%, 5%), hsla(240, 100%, 10%, 0.5), hsl(0, 0%, 5%));
+	background: linear-gradient(45deg, hsla(240, 100%, 10%, 0.6), hsl(0, 0%, 5%), hsla(240, 100%, 10%, 0.6), hsl(0, 0%, 5%));
 	background-repeat: no-repeat;
 	background-size: cover;
 }

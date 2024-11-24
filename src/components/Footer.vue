@@ -6,7 +6,7 @@ import { Instagram, Github, Heart } from "lucide-vue-next";
 	<div class="footer">
 		<ul>
 			<li>
-				<small>made with <Heart color="#ff4baa" size="0.9rem" :stroke-width="3" /> by narayanagung</small>
+				<small>Made with 💟 by narayanagung</small>
 			</li>
 			<li>
 				<a href="https://www.instagram.com/narayanagung" title="Instagram" target="_blank"

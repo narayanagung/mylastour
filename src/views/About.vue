@@ -67,7 +67,7 @@ onMounted(() => {
 			</p>
 		</div>
 	</div>
-	<hr style="width: 40%; margin: 1rem auto" />
+	<hr style="width: 50%; margin: 1rem auto" />
 	<hgroup>
 		<h2><summary>synopsis</summary></h2>
 	</hgroup>
@@ -80,15 +80,16 @@ onMounted(() => {
 			</i>
 		</p>
 		<div class="image-stack">
-			<!-- <img src="../assets/Img/01.jpg" alt="volume cover" /> -->
+			<!-- <img src="../assets/Img/01.jpg" alt="volume cover" />
 			<img src="../assets/Img/02.jpg" alt="volume cover" />
 			<img src="../assets/Img/03.jpg" alt="volume cover" />
 			<img src="../assets/Img/04.jpg" alt="volume cover" />
 			<img src="../assets/Img/05.jpg" alt="volume cover" />
-			<img src="../assets/Img/06.jpg" alt="volume cover" />
+			<img src="../assets/Img/06.jpg" alt="volume cover" /> -->
+			<img src="../assets/Img/tour.jpg" title="All credit to Tsukumizu" alt="tour so far" />
 		</div>
 	</section>
-	<hr style="width: 45%; margin: 1rem auto" />
+	<hr style="width: 50%; margin: 1rem auto" />
 	<section>
 		<hgroup>
 			<h2><summary>how is this relevant?</summary></h2>
@@ -141,7 +142,7 @@ h2 {
 	display: grid;
 	place-content: center;
 	font-size: 1.8rem;
-	padding-block: 1rem;
+	padding-top: 1rem;
 	margin-inline: 1rem;
 	// background-color: hsla(208, 100%, 97%, 0.384);
 
@@ -161,18 +162,19 @@ h2 {
 
 	img {
 		display: block;
-		width: 15rem;
+		width: 18rem;
 		margin-left: auto;
 		margin-right: auto;
 		border: 2px solid hsl(0, 0%, 100%);
 		border-radius: 0.25rem;
-		box-shadow: 0px 0px 20px hsla(0, 0%, 100%, 0);
+		// box-shadow: 0px 0px 20px hsla(0, 0%, 100%, 0);
+		box-shadow: 0px 5px 15px hsla(0, 0%, 100%, 0.5);
 		transition: 500ms;
 
-		&:hover {
-			box-shadow: 0px 0px 35px hsl(0, 0%, 100%);
-			transition: 500ms;
-		}
+		// &:hover {
+		// 	box-shadow: 0px 0px 35px hsl(0, 0%, 100%);
+		// 	transition: 500ms;
+		// }
 	}
 }
 
@@ -203,10 +205,17 @@ hgroup {
 	}
 }
 
-.image-stack {
+section .image-stack {
 	display: flex;
-	width: 20%;
+	justify-content: center;
 	padding-block: 2rem;
+
+	img {
+		width: 100%;
+		border: 2px solid hsl(0, 0%, 100%);
+		border-radius: 0.25rem;
+		box-shadow: 0px 5px 15px hsla(0, 0%, 100%, 0.5);
+	}
 }
 
 section .foot {
@@ -218,6 +227,7 @@ section .foot {
 		width: 100%;
 		border: 2px solid hsl(0, 0%, 100%);
 		border-radius: 0.25rem;
+		box-shadow: 0px 5px 15px hsla(0, 0%, 100%, 0.5);
 	}
 }
 

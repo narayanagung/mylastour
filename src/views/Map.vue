@@ -4,7 +4,7 @@
 		<small>geolocation for each photos.</small>
 	</hgroup>
 	<section class="map-wrap">
-		<iframe src="https://www.google.com/maps/d/u/0/embed?mid=1xejczkd6NzBtjvTzyDgiz1OTK2C0Jj4&ehbc=2E312F&noprof=1" width="1920" height="1080"></iframe>
+		<iframe src="https://www.google.com/maps/d/u/0/embed?mid=1xejczkd6NzBtjvTzyDgiz1OTK2C0Jj4&ehbc=2E312F&noprof=1" width="1280" height="720"></iframe>
 	</section>
 </template>
 
