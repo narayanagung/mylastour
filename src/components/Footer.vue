@@ -1,5 +1,5 @@
 <script setup>
-import { Instagram, Github, Heart } from "lucide-vue-next";
+import { Instagram, Github } from "lucide-vue-next";
 </script>
 
 <template>
@@ -9,12 +9,10 @@ import { Instagram, Github, Heart } from "lucide-vue-next";
 				<small>Made with 💟 by narayanagung</small>
 			</li>
 			<li>
-				<a href="https://www.instagram.com/narayanagung" title="Instagram" target="_blank"
-					><Instagram color="#fff" size="0.9rem" :stroke-width="2"
-				/></a>
+				<a href="https://instagram.com/narayanagung" title="Instagram" target="_blank"><Instagram color="#fff" size="1rem" :stroke-width="2" /></a>
 			</li>
 			<li>
-				<a href="https://github.com/narayanagung" title="Github" target="_blank"><Github color="#fff" size="0.9rem" :stroke-width="2" /></a>
+				<a href="https://github.com/narayanagung" title="Github" target="_blank"><Github color="#fff" size="1rem" :stroke-width="2" /></a>
 			</li>
 		</ul>
 	</div>

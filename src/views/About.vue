@@ -67,7 +67,7 @@ onMounted(() => {
 			</p>
 		</div>
 	</div>
-	<hr style="width: 50%; margin: 1rem auto" />
+	<hr style="width: 50vw; margin: 1rem auto" />
 	<hgroup>
 		<h2><summary>synopsis</summary></h2>
 	</hgroup>
@@ -89,7 +89,7 @@ onMounted(() => {
 			<img src="../assets/Img/tour.jpg" title="All credit to Tsukumizu" alt="tour so far" />
 		</div>
 	</section>
-	<hr style="width: 50%; margin: 1rem auto" />
+	<hr style="width: 50vw; margin: 1rem auto" />
 	<section>
 		<hgroup>
 			<h2><summary>how is this relevant?</summary></h2>
@@ -231,6 +231,7 @@ section .foot {
 	}
 }
 
+// Resposive stuff
 @media screen and (min-width: 700px) {
 	section {
 		padding-inline: 25rem;
