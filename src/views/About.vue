@@ -53,9 +53,9 @@ onMounted(() => {
 		<!-- main div -->
 		<div class="content">
 			<h2>attention!</h2>
-			<a href="https://www.instagram.com/p/DBGgLvvy8Mi/" title="Published by Elex Media" target="_blank"
-				><img src="..\assets\Img\gltelex.webp" alt="glt manga"
-			/></a>
+			<a href="https://www.instagram.com/p/DBGgLvvy8Mi/" title="Published by Elex Media" target="_blank">
+				<img src="..\assets\Img\gltelex.webp" alt="glt manga" />
+			</a>
 			<p class="time" v-if="!countdownEnded">
 				{{ formattedDays }} days until release <br />
 				<b>{{ formattedCountdown }}</b>
@@ -168,8 +168,8 @@ h2 {
 		border: 2px solid hsl(0, 0%, 100%);
 		border-radius: 0.25rem;
 		// box-shadow: 0px 0px 20px hsla(0, 0%, 100%, 0);
-		box-shadow: 0px 5px 15px hsla(0, 0%, 100%, 0.5);
-		transition: 500ms;
+		box-shadow: 0px 5px 15px hsla(0, 0%, 100%, 0.3);
+		// transition: 500ms;
 
 		// &:hover {
 		// 	box-shadow: 0px 0px 35px hsl(0, 0%, 100%);
@@ -214,7 +214,7 @@ section .image-stack {
 		width: 100%;
 		border: 2px solid hsl(0, 0%, 100%);
 		border-radius: 0.25rem;
-		box-shadow: 0px 5px 15px hsla(0, 0%, 100%, 0.5);
+		box-shadow: 0px 5px 15px hsla(0, 0%, 100%, 0.3);
 	}
 }
 
@@ -227,7 +227,7 @@ section .foot {
 		width: 100%;
 		border: 2px solid hsl(0, 0%, 100%);
 		border-radius: 0.25rem;
-		box-shadow: 0px 5px 15px hsla(0, 0%, 100%, 0.5);
+		box-shadow: 0px 5px 15px hsla(0, 0%, 100%, 0.3);
 	}
 }
 

@@ -8,12 +8,12 @@ import { Instagram, Github } from "lucide-vue-next";
 			<li>
 				<small>Made with 💟 by narayanagung</small>
 			</li>
-			<li>
+			<!-- <li>
 				<a href="https://instagram.com/narayanagung" title="Instagram" target="_blank"><Instagram color="#fff" size="1rem" :stroke-width="2" /></a>
 			</li>
 			<li>
 				<a href="https://github.com/narayanagung" title="Github" target="_blank"><Github color="#fff" size="1rem" :stroke-width="2" /></a>
-			</li>
+			</li> -->
 		</ul>
 	</div>
 </template>

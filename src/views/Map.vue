@@ -33,6 +33,7 @@ hgroup {
 		max-width: 100%;
 		border: 2px solid hsl(0, 0%, 100%);
 		border-radius: 0.25rem;
+		box-shadow: 0px 5px 15px hsla(0, 0%, 100%, 0.3);
 	}
 }
 </style>
