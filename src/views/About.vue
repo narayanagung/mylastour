@@ -53,12 +53,12 @@ onMounted(() => {
 		<!-- main div -->
 		<div class="content">
 			<h2>attention!</h2>
-			<a href="https://www.instagram.com/p/DBGgLvvy8Mi/" title="Published by Elex Media" target="_blank">
+			<a href="https://www.instagram.com/p/DBGgLvvy8Mi/" title="published by Elex Media" target="_blank">
 				<img src="..\assets\Img\gltelex.webp" alt="glt manga" />
 			</a>
 			<p class="time" v-if="!countdownEnded">
 				{{ formattedDays }} days until release <br />
-				<b>{{ formattedCountdown }}</b>
+				<b class="timeout">{{ formattedCountdown }}</b>
 			</p>
 			<p class="time" v-else-if="countdownEnded">
 				{{ formattedDays }} <br />
@@ -67,7 +67,7 @@ onMounted(() => {
 			</p>
 		</div>
 	</div>
-	<hr style="width: 50vw; margin: 1rem auto" />
+	<br />
 	<hgroup>
 		<h2><summary>synopsis</summary></h2>
 	</hgroup>
@@ -80,54 +80,48 @@ onMounted(() => {
 			</i>
 		</p>
 		<div class="image-stack">
-			<!-- <img src="../assets/Img/01.jpg" alt="volume cover" />
-			<img src="../assets/Img/02.jpg" alt="volume cover" />
-			<img src="../assets/Img/03.jpg" alt="volume cover" />
-			<img src="../assets/Img/04.jpg" alt="volume cover" />
-			<img src="../assets/Img/05.jpg" alt="volume cover" />
-			<img src="../assets/Img/06.jpg" alt="volume cover" /> -->
-			<img src="../assets/Img/tour.jpg" title="All credit to Tsukumizu" alt="tour so far" />
+			<img src="../assets/Img/tour.jpg" title="all credit to Tsukumizu" alt="tour so far" />
 		</div>
 	</section>
-	<hr style="width: 50vw; margin: 1rem auto" />
+	<br />
 	<section>
 		<hgroup>
 			<h2><summary>how is this relevant?</summary></h2>
 			<!-- <small>...</small> -->
 		</hgroup>
 		<p>
-			<i>Girl’s Last Tour</i> is a six-volume comic by Tsukumizu that profoundly changed the way I live in this world. During some of the most exhausting
+			<i>Girl's Last Tour</i> is a six-volume comic by Tsukumizu that profoundly changed the way i live in this world. during some of the most exhausting
 			and fearful moments of life, this comic influenced me to let go and not overthink the small details of life, saving me from many of the dangers that
-			were constantly on my mind. The Instagram account, along with the theme and photos I post, stemmed from my decision to approach social media more
+			were constantly on my mind. the instagram account, along with the theme and photos I post, stemmed from my decision to approach social media more
 			honestly, no longer obsessing over the "image" that used to make me anxious and fearful about what to share with others.
 		</p>
 		<br />
 		<p>
-			This shift began during what I consider the worst year I’ve ever experienced—and I’m sure many would agree—2020, the start of the COVID-19 pandemic.
-			Having so much free time didn’t necessarily bring happiness, especially since school at that time didn’t feel like learning at all. After graduating
-			from vocational school, working immediately became a necessity due to our financial situation, which was, well, not great.
+			this shift began during what I consider the worst year i've ever experienced and i'm sure many would agree-2020, the start of the COVID-19 pandemic.
+			having so much free time didn't necessarily bring happiness, especially since school at that time didn't feel like it used to be at all. after
+			graduating from vocational school, working immediately became a necessity due to our financial situation, which was, well, not great.
 		</p>
 		<br />
 		<p>
-			By 2021, fortunately, I found that working was much more enjoyable than I had expected. Yes, there were stressful and overwhelming moments, just
-			like in school, but at least there was compensation for the stress in the end of each month. Of course, I couldn’t use all of it for
-			myself—definitely not—but it was enough to cover a month’s worth of fuel for my motorcycle and maybe a little for snacks.
+			by 2021, fortunately, i found that working (fortunately) was much more enjoyable than i had expected. yes, there were stressful and overwhelming
+			moments, just like in school, but at least there was compensation for the stress in the end of each month (i guess). of course, i couldn't use all
+			of it for myself, definitely not-but it was enough to cover a month's worth of fuel for my motorcycle and maybe a little for snacks.
 		</p>
 		<br />
 		<p>
-			Commuting to work Monday through Friday and then traveling home from my rented room over the course of a year really made me fall in love with
-			riding motorcycles. It all started with my daily school commute in 2016, covering about 16 kilometers a day, and then evolved into weekly trips of
-			around 120 kilometers to return home from where I was working in 2021, I became very familiar with the roads I traveled regularly.
+			commuting to work monday through friday and then go home from my rented room over the course of a year really made me fall in love with riding my
+			motorcycles. it all started with my daily school commute in 2016, covering about 16 kilometers a day, and then evolved into weekly trips of around
+			120 kilometers to return home from where I was working in 2021, i became very familiar with the roads I traveled regularly.
 		</p>
 		<br />
 		<p>
-			That’s when an idea struck me "If I can ride 120 kilometers a week on my motorcycle, wouldn’t it be easy to ride all around Bali in just three
-			days?" I thought to myself. And with that thought, combined with my love for traveling, I began #mylastour.
+			that's when an idea struck me "if i can ride 120 kilometers a week on my motorcycle, wouldn't it be easy to ride all around Bali in just three
+			days?" i thought to myself. and with that thought, combined with my love for traveling, i began #mylastour.
 		</p>
 	</section>
 	<section>
 		<div class="foot">
-			<img src="../assets/Img/glt.png" title="All credit to Tsukumizu" alt="glt best panel" />
+			<img src="../assets/Img/glt.png" title="all credit to Tsukumizu" alt="glt end of 1st volume" />
 		</div>
 	</section>
 </template>
@@ -153,6 +147,8 @@ h2 {
 		.timeout {
 			font-size: 1.8rem;
 			color: hsl(200, 100%, 50%);
+			// padding: 0.5rem 1rem;
+			// outline: 2px solid hsl(0, 0%, 100%);
 		}
 
 		span {

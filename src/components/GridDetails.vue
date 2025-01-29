@@ -1,7 +1,7 @@
 <script setup>
 import { useRoute } from "vue-router";
 import { imagesData } from "../data/images.js";
-import { MapPin } from "lucide-vue-next";
+import { MapPin, MapPinned } from "lucide-vue-next";
 
 const route = useRoute();
 const imageId = route.params.id;
@@ -18,18 +18,28 @@ function getImageUrl(image) {
 <template>
 	<div v-if="imageDetails">
 		<hgroup>
-			<h1>{{ imageDetails.title }}</h1>
+			<h1>{{ imageDetails.image_title }}</h1>
 			<div class="subtitle">
-				<a :href="imageDetails.link" class="pin" target="_blank" title="Go to location">
+				<a :href="imageDetails.link" class="pin" target="_blank" title="go to location">
 					<MapPin color="#d9d9d9" size="1rem" :stroke-width="3" />
 					{{ imageDetails.location }}
 				</a>
-				<a href="https://www.instagram.com/explore/search/keyword/?q=%23mylastour" class="hashtag" title="Go to hashtag" target="_blank">#mylastour</a>
+				<a href="https://www.instagram.com/explore/search/keyword/?q=%23mylastour" class="hashtag" title="go to hashtag" target="_blank">#mylastour</a>
 			</div>
 		</hgroup>
 		<main>
-			<img :src="getImageUrl(imageDetails.id)" alt="Detailed View" />
+			<img :src="getImageUrl(imageDetails.id)" alt="detailed view" />
 			<p class="description">{{ imageDetails.description }}</p>
+			<section>
+				<h1>📝</h1>
+				<p class="image-notes">{{ imageDetails.notes_content }}</p>
+			</section>
+			<a :href="imageDetails.link" class="take-me-btn" target="_blank" title="find it on google maps"
+				>take me there <MapPinned color="#fff" size="2rem" :stroke-width="2"
+			/></a>
+			<div class="mini-map">
+				<iframe :src="imageDetails.mini_map" width="650" height="450" allowfullscreen="" referrerpolicy="no-referrer-when-downgrade"></iframe>
+			</div>
 		</main>
 	</div>
 	<div v-else>
@@ -100,6 +110,64 @@ main {
 	flex-direction: column;
 	margin-inline: 0.5rem;
 
+	.mini-map {
+		margin-top: 3rem;
+
+		iframe {
+			max-width: 100%;
+			border: 2px solid hsl(0, 0%, 100%);
+			border-radius: 0.25rem;
+			box-shadow: 0px 5px 15px hsla(0, 0%, 100%, 0.3);
+		}
+	}
+
+	.take-me-btn {
+		display: flex;
+		gap: 0.5rem;
+		align-items: center;
+		margin-top: 3rem;
+		padding: 0.5rem 1rem;
+		text-decoration: none;
+		outline: 2px solid hsl(0, 0%, 100%);
+		color: hsl(0, 0%, 100%);
+		border-radius: 0.5rem;
+		font-size: 1.7rem;
+		font-weight: bold;
+		text-shadow: 4px 4px hsl(200, 100%, 15%);
+		background-color: hsla(200, 100%, 15%, 0.5);
+		transition: 150ms;
+
+		&:hover {
+			transition: 150ms;
+			background-color: hsl(200, 100%, 30%);
+		}
+	}
+
+	section {
+		padding-top: 1rem;
+
+		h1 {
+			text-shadow: 4px 4px hsl(200, 100%, 15%);
+			padding-bottom: 0.5rem;
+			font-size: 2rem;
+			text-align: center;
+		}
+
+		.image-notes {
+			text-align: center;
+			margin-inline: 15rem;
+			// font-style: italic;
+
+			@media screen and (max-width: 800px) {
+				margin-inline: 5rem;
+			}
+
+			@media screen and (max-width: 500px) {
+				margin-inline: 1rem;
+			}
+		}
+	}
+
 	img {
 		width: 40rem;
 		border-radius: 0.25rem;
@@ -112,6 +180,7 @@ main {
 		text-align: center;
 		color: hsl(0, 0%, 85%);
 		font-style: italic;
+		padding-bottom: 1rem;
 	}
 
 	.notes {

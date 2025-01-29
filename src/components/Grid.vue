@@ -16,10 +16,10 @@ const sortedImages = computed(() => {
 
 	if (sortKey.value === "newest") {
 		sortedArray.sort((a, b) => b.localeCompare(a));
-		btnText.value = `Newest (${new Date().getFullYear()})`;
+		btnText.value = `newest (${new Date().getFullYear()})`;
 	} else if (sortKey.value === "oldest") {
 		sortedArray.sort((a, b) => a.localeCompare(b));
-		btnText.value = "Oldest (2021)";
+		btnText.value = "oldest (2021)";
 	}
 
 	return sortedArray;
@@ -37,24 +37,24 @@ const goToImageDetails = (imageId) => {
 	router.push(`/image/${imageId}`);
 };
 
-const isModalOpen = ref(false);
-const selectedImage = ref(null);
+// const isModalOpen = ref(false);
+// const selectedImage = ref(null);
 
-const openModal = (image) => {
-	selectedImage.value = image;
-	isModalOpen.value = true;
-};
+// const openModal = (image) => {
+// 	selectedImage.value = image;
+// 	isModalOpen.value = true;
+// };
 
-const closeModal = () => {
-	isModalOpen.value = false;
-	selectedImage.value = null;
-};
+// const closeModal = () => {
+// 	isModalOpen.value = false;
+// 	selectedImage.value = null;
+// };
 </script>
 
 <template>
 	<BaseLayout>
 		<div class="btn-wrap">
-			<button @click="sortToggle" title="Sort">
+			<button @click="sortToggle" title="sort the images">
 				<Icon icon="mdi:sort" width="20" height="20" /><span>{{ btnText }}</span>
 			</button>
 		</div>
@@ -122,7 +122,7 @@ const closeModal = () => {
 	padding-bottom: 2rem;
 
 	button {
-		font-weight: 500;
+		font-weight: 600;
 		gap: 0.5rem;
 		display: flex;
 		align-items: center;
@@ -130,13 +130,15 @@ const closeModal = () => {
 		color: white;
 		background: none;
 		cursor: pointer;
-		outline: 2px solid #fff;
+		outline: 2px solid hsl(0, 0%, 100%);
 		border-radius: 0.25rem;
 		padding: 0.3rem 0.6rem;
+		text-shadow: 2px 2px hsl(200, 100%, 15%);
+		background-color: hsla(200, 100%, 15%, 0.5);
 		transition: 150ms;
 
 		&:hover {
-			outline: 2px solid hsl(200, 100%, 50%);
+			background-color: hsl(200, 100%, 30%);
 			transition: 150ms;
 		}
 	}
@@ -156,24 +158,6 @@ const closeModal = () => {
 		// border: 2px solid hsl(0, 0%, 100%);
 		transition: 500ms;
 	}
-}
-
-// Animation
-.fade-zoom-enter-active,
-.fade-zoom-leave-active {
-	transition: opacity 0.4s, transform 0.4s;
-}
-
-.fade-zoom-enter-from,
-.fade-zoom-leave-to {
-	opacity: 0;
-	transform: translateY(100%);
-}
-
-.fade-zoom-enter-to,
-.fade-zoom-leave-from {
-	opacity: 1;
-	transform: translateY(0) scale(1);
 }
 
 @media screen and (min-width: 700px) {

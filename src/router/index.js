@@ -1,6 +1,6 @@
 import { createRouter, createWebHistory } from "vue-router";
 import Home from "../views/Home.vue";
-import GridDetails from "../views/GridDetails.vue";
+import GridDetails from "../components/GridDetails.vue";
 
 const router = createRouter({
 	history: createWebHistory(import.meta.env.BASE_URL),
