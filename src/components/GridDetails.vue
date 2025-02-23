@@ -20,24 +20,24 @@ function getImageUrl(image) {
 		<hgroup>
 			<h1>{{ imageDetails.image_title }}</h1>
 			<div class="subtitle">
-				<a :href="imageDetails.link" class="pin" target="_blank" title="go to location">
+				<a :href="imageDetails.link" class="pin" target="_blank" title="coordinates">
 					<MapPin color="#d9d9d9" size="1rem" :stroke-width="3" />
 					{{ imageDetails.location }}
 				</a>
-				<a href="https://www.instagram.com/explore/search/keyword/?q=%23mylastour" class="hashtag" title="go to hashtag" target="_blank">#mylastour</a>
+				<a href="https://www.instagram.com/explore/search/keyword/?q=%23mylastour" class="hashtag" title="hashtag" target="_blank">#mylastour</a>
 			</div>
 		</hgroup>
 		<main>
-			<img :src="getImageUrl(imageDetails.id)" alt="detailed view" />
+			<img :src="getImageUrl(imageDetails.id)" alt="detailed view of the photos" />
 			<p class="description">{{ imageDetails.description }}</p>
 			<section>
 				<h1>📝</h1>
 				<p class="image-notes">{{ imageDetails.notes_content }}</p>
 			</section>
-			<a :href="imageDetails.link" class="take-me-btn" target="_blank" title="find it on google maps"
-				>take me there <MapPinned color="#fff" size="2rem" :stroke-width="2"
+			<a :href="imageDetails.link" class="take-me-btn" target="_blank" title="precise location where the photos are taken"
+				>take me there <MapPinned color="#fff" size="1.8rem" :stroke-width="2"
 			/></a>
-			<div class="mini-map">
+			<div class="mini-map" title="mini map">
 				<iframe :src="imageDetails.mini_map" width="650" height="450" allowfullscreen="" referrerpolicy="no-referrer-when-downgrade"></iframe>
 			</div>
 		</main>
@@ -154,13 +154,17 @@ main {
 		}
 
 		.image-notes {
-			text-align: center;
+			text-align: justify;
 			margin-inline: 15rem;
 			// font-style: italic;
 
 			@media screen and (max-width: 800px) {
 				margin-inline: 5rem;
 			}
+
+			// @media screen and (min-width: 700px) {
+			// 	text-align: center;
+			// }
 
 			@media screen and (max-width: 500px) {
 				margin-inline: 1rem;

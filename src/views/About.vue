@@ -91,9 +91,9 @@ onMounted(() => {
 		</hgroup>
 		<p>
 			<i>Girl's Last Tour</i> is a six-volume comic by Tsukumizu that profoundly changed the way i live in this world. during some of the most exhausting
-			and fearful moments of life, this comic influenced me to let go and not overthink the small details of life, saving me from many of the dangers that
-			were constantly on my mind. the instagram account, along with the theme and photos I post, stemmed from my decision to approach social media more
-			honestly, no longer obsessing over the "image" that used to make me anxious and fearful about what to share with others.
+			and fearful moments of my life, this comic influenced me to let go and not overthink the small details of life, saving me from many of the dangers
+			that were constantly on my mind. the instagram account, along with the theme and photos I post, stemmed from my decision to approach social media
+			more honestly, no longer obsessing over the 'image' that used to make me anxious and fearful about what to share with others.
 		</p>
 		<br />
 		<p>
@@ -103,9 +103,9 @@ onMounted(() => {
 		</p>
 		<br />
 		<p>
-			by 2021, fortunately, i found that working (fortunately) was much more enjoyable than i had expected. yes, there were stressful and overwhelming
-			moments, just like in school, but at least there was compensation for the stress in the end of each month (i guess). of course, i couldn't use all
-			of it for myself, definitely not-but it was enough to cover a month's worth of fuel for my motorcycle and maybe a little for snacks.
+			2021, i found that working (fortunately) was much more enjoyable than i had expected. yes, there were stressful and overwhelming moments, just like
+			in school, but at least there was compensation for the stress in the end of each month (i guess). of course, i couldn't use all of it for myself,
+			definitely not-but it was enough to cover a month's worth of fuel for my motorcycle and maybe a little for snacks.
 		</p>
 		<br />
 		<p>
@@ -115,8 +115,9 @@ onMounted(() => {
 		</p>
 		<br />
 		<p>
-			that's when an idea struck me "if i can ride 120 kilometers a week on my motorcycle, wouldn't it be easy to ride all around Bali in just three
-			days?" i thought to myself. and with that thought, combined with my love for traveling, i began #mylastour.
+			that's when an idea struck me
+			<i>'if i can ride 120 kilometers a week on my motorcycle, wouldn't it be easy to ride all around Bali in just three days?'</i> i thought to myself.
+			and with that thought, combined with my love for traveling, i began #mylastour.
 		</p>
 	</section>
 	<section>
