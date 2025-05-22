@@ -16,10 +16,10 @@ const sortedImages = computed(() => {
 
 	if (sortKey.value === "newest") {
 		sortedArray.sort((a, b) => b.localeCompare(a));
-		btnText.value = `newest (${new Date().getFullYear()})`;
+		btnText.value = "newest";
 	} else if (sortKey.value === "oldest") {
 		sortedArray.sort((a, b) => a.localeCompare(b));
-		btnText.value = "oldest (2021)";
+		btnText.value = "oldest";
 	}
 
 	return sortedArray;

@@ -66,4 +66,37 @@ export const imagesData = [
 		notes_content:
 			"i've seen this place grows more and more crowded with locals in the past years after having a huge changes by the local goverment because they want to prevent abrasion from eroting the beach. multiple hotels are being build in the area around the beach that will attract more international tourist. i kinda miss when this beach are less crowded, it was my favorite place to chill and drink, but im also happy the locals can make a fortune here.",
 	},
+	{
+		id: "grid-51",
+		image_title: "remote",
+		location: "-8.252476, 115.426295",
+		description: "a famous village destination in Bali",
+		link: "https://maps.app.goo.gl/nZzgjDcAwEFrkMQ18",
+		mini_map:
+			"https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3948.5044895723595!2d115.426295!3d-8.252475999999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zOMKwMTUnMDguOSJTIDExNcKwMjUnMzQuNyJF!5e0!3m2!1sid!2sid!4v1747813745850!5m2!1sid!2sid",
+		notes_content:
+			"i've been hearing about this village since i was a kid but i just know found out the fact that it is quite a remote and hidden between The Great Batur Lake and Trunyan Hill which i want to climb at some point in the future. one off the most popular site is the famous Trunyan Graveyard located across the lake but i didn't plan to go because i simply did not get why people want to see a place where the dead are reside, oh well.",
+	},
+	{
+		id: "grid-50",
+		image_title: "valley",
+		location: "-8.373308, 114.896904",
+		description: "a simple small rest area for a small time traveler",
+		link: "https://maps.app.goo.gl/x46nSjHqGQYrGhqGA",
+		mini_map:
+			'https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d986.8217577810112!2d114.89664043247146!3d-8.373401130215917!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zOMKwMjInMjMuOSJTIDExNMKwNTMnNDguOSJF!5e0!3m2!1sid!2sid!4v1747922610182!5m2!1sid!2sid"',
+		notes_content:
+			"found this tiny rest area while going home and realizing this road that i take is the only means of transportation to the southern side of the island. there's not alot of road that completely connecting the north of Bali and that's why i'm seeing this vast valley with nothing but trees and unwalkable terrain.",
+	},
+	{
+		id: "grid-49",
+		image_title: "onions",
+		location: "-8.228397, 115.389128",
+		description: "that time when i stumbled to an onion farm",
+		link: "https://maps.app.goo.gl/9BqzaeVg3rmBuAek6",
+		mini_map:
+			"https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d987.1862045444656!2d115.3884844695538!3d-8.228396599487768!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zOMKwMTMnNDIuMiJTIDExNcKwMjMnMjAuOSJF!5e0!3m2!1sid!2sid!4v1747923707969!5m2!1sid!2sid",
+		notes_content:
+			"you're not going to believe this but im actually searching for a ghost market but i found an onion farm instead. the roads are filled with rocks, mud, and just everything that going to make your day a little stressful. so the ghost market are not real (of course) but it's an interesting cold-quiet place to relax and appreciate how this common household produce is being produced. ",
+	},
 ];

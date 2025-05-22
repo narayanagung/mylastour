@@ -154,17 +154,21 @@ main {
 		}
 
 		.image-notes {
-			text-align: justify;
-			margin-inline: 15rem;
+			text-align: left;
+			margin-inline: 25rem;
 			// font-style: italic;
 
-			@media screen and (max-width: 800px) {
-				margin-inline: 5rem;
+			@media screen and (max-width: 1200px) {
+				margin-inline: 10rem;
 			}
 
-			// @media screen and (min-width: 700px) {
-			// 	text-align: center;
-			// }
+			@media screen and (max-width: 800px) {
+				margin-inline: 2.5rem;
+			}
+
+			@media screen and (max-width: 600px) {
+				text-align: center;
+			}
 
 			@media screen and (max-width: 500px) {
 				margin-inline: 1rem;
