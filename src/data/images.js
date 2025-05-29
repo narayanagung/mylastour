@@ -48,7 +48,7 @@ export const imagesData = [
 		id: "grid-53",
 		image_title: "sun setting",
 		location: "-8.55876, 115.03125",
-		description: "a calm and cheap way to get those sunset photos",
+		description: "a cheap way to get those sunset photos",
 		link: "https://maps.app.goo.gl/wfUxrcBdTkYAyDuv6",
 		mini_map:
 			"https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3945.386732226993!2d115.02867507482725!3d-8.558759991484965!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zOMKwMzMnMzEuNSJTIDExNcKwMDEnNTIuNSJF!5e0!3m2!1sid!2sid!4v1740317353173!5m2!1sid!2sid",
@@ -81,7 +81,7 @@ export const imagesData = [
 		id: "grid-50",
 		image_title: "valley",
 		location: "-8.373308, 114.896904",
-		description: "a simple small rest area for a small time traveler",
+		description: "a small rest area for a small time traveler",
 		link: "https://maps.app.goo.gl/x46nSjHqGQYrGhqGA",
 		mini_map:
 			'https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d986.8217577810112!2d114.89664043247146!3d-8.373401130215917!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zOMKwMjInMjMuOSJTIDExNMKwNTMnNDguOSJF!5e0!3m2!1sid!2sid!4v1747922610182!5m2!1sid!2sid"',
@@ -98,5 +98,60 @@ export const imagesData = [
 			"https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d987.1862045444656!2d115.3884844695538!3d-8.228396599487768!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zOMKwMTMnNDIuMiJTIDExNcKwMjMnMjAuOSJF!5e0!3m2!1sid!2sid!4v1747923707969!5m2!1sid!2sid",
 		notes_content:
 			"you're not going to believe this but im actually searching for a ghost market but i found an onion farm instead. the roads are filled with rocks, mud, and just everything that going to make your day a little stressful. so the ghost market are not real (of course) but it's an interesting cold-quiet place to relax and appreciate how this common household produce is being produced. ",
+	},
+	{
+		id: "grid-48",
+		image_title: "fishy",
+		location: "-8.387941, 114.568890",
+		description: "where people know how to thrive in the ocean",
+		link: "https://maps.app.goo.gl/UQcmEnQrppx9NWud7",
+		mini_map:
+			"https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3947.1394573626035!2d114.56631467482522!3d-8.387941391650003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zOMKwMjMnMTYuNiJTIDExNMKwMzQnMDguMCJF!5e0!3m2!1sid!2sid!4v1748007907194!5m2!1sid!2sid",
+		notes_content:
+			"fisherman village is what pop on my mind when i first visited this beach. not like any beach that i visited regularly, this beach is a home of a bunch of fisherman. rows after rows of boat are just float-parking at the shore, an old man fishing alone, the sunset is just there not even being the spotlight anymore. it's also the first time i see a motorboat-only gas station at the near of the shore (make sense). the only issue i guess is the absolute fishy/salty stench that lingers all over the place.",
+	},
+	{
+		id: "grid-47",
+		image_title: "looming",
+		location: "-8.408220, 115.519680",
+		description: "once a popular place to sight-seeing other great mountains",
+		link: "https://maps.app.goo.gl/85xafXn9DVc9m3ju7",
+		mini_map:
+			"https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3946.933218888494!2d115.51710507482545!3d-8.408219991630379!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zOMKwMjQnMjkuNiJTIDExNcKwMzEnMTAuOSJF!5e0!3m2!1sid!2sid!4v1748476571110!5m2!1sid!2sid",
+		notes_content:
+			"that mountain is Mt. Agung. Cemara hill are the place that i took this picture from. technically, this was the first hill i climbed alone with no preparation whatsoever because it just happened to be accessible by motorcycle. it was a pretty terrifying experience because the road was dry, loose and super slippery. fortunately, the weather was perfectly sunny with not a single cloud in sight. rain would’ve definitely made things way worse. not to mention there is not a single person was there but the exited store owner at the top of the hill happily providing me with some hot tea.",
+	},
+	{
+		id: "grid-46",
+		image_title: "water supply",
+		location: "-8.245110, 114.941010",
+		description: "the biggest water dam on the entire island",
+		link: "https://maps.app.goo.gl/6vyUmTgda4JP16xSA",
+		mini_map:
+			"https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3948.5780813263004!2d114.93843507482362!3d-8.245109991788198!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zOMKwMTQnNDIuNCJTIDExNMKwNTYnMjcuNiJF!5e0!3m2!1sid!2sid!4v1748477247429!5m2!1sid!2sid",
+		notes_content:
+			"one of the trips that i actually planned for going. i like places with a large body of water, like the ocean for example but lakes are a special case because of their rarity here. there are only four major lakes in the entire island, but i wish there were more. so a dam gives me a similar vibe. it's one of the hidden but well-known spots. i think the location and the fact that this is the biggest of all of them-is what makes it special.",
+	},
+	{
+		id: "grid-45",
+		image_title: "hot",
+		location: "-8.531280, 115.030140",
+		description: "asphalt that has been glared by the sun all day are in fact hot",
+		link: "https://maps.app.goo.gl/VHLGA9uJGTbU84ce6",
+		mini_map:
+			"https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3945.6710647319123!2d115.02756507482691!3d-8.531279991511514!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zOMKwMzEnNTIuNiJTIDExNcKwMDEnNDguNSJF!5e0!3m2!1sid!2sid!4v1748477903993!5m2!1sid!2sid",
+		notes_content:
+			"on my journey to the beach, for some reason i decided to stop in the middle of the road on a hot, humid day. as i stopped the vehicle, there came the moment of me realizing how hot the asphalt was, even with some rubber slippers on. i can't imagine my bare feet touching the hot asphalt directly. i could have done it at that moment just to test my curiosity, but i chose not to.",
+	},
+	{
+		id: "grid-44",
+		image_title: "sneeze",
+		location: "-8.644630, 115.281370",
+		description: "remember to look at the sky at least once a day",
+		link: "https://maps.app.goo.gl/FtyXetcng8tTYBJA8",
+		mini_map:
+			"https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3944.4923962415655!2d115.2787950748283!3d-8.644629991402143!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zOMKwMzgnNDAuNyJTIDExNcKwMTYnNTIuOSJF!5e0!3m2!1sid!2sid!4v1748479246211!5m2!1sid!2sid",
+		notes_content:
+			"realizing i hadn't captured this type of cloud before, i began to take a picture. then it hit me. the urge to sneeze was overwhelming, and it was quite a loud sneeze. but why? it always happens only the first time i look at the sky each day, then it's like it gets reset the next day. the sneeze only happens once a day and only when i look up at the sky for the first time. has someone figured out why this happens?",
 	},
 ];

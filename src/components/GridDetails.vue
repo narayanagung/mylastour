@@ -154,7 +154,7 @@ main {
 		}
 
 		.image-notes {
-			text-align: left;
+			text-align: justify;
 			margin-inline: 25rem;
 			// font-style: italic;
 
