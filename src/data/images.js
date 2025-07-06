@@ -154,4 +154,48 @@ export const imagesData = [
 		notes_content:
 			"realizing i hadn't captured this type of cloud before, i began to take a picture. then it hit me. the urge to sneeze was overwhelming, and it was quite a loud sneeze. but why? it always happens only the first time i look at the sky each day, then it's like it gets reset the next day. the sneeze only happens once a day and only when i look up at the sky for the first time. has someone figured out why this happens?",
 	},
+	{
+		id: "grid-43",
+		image_title: "bloom",
+		location: "-8.43676, 115.48862",
+		description: '"flower of god that are planted by man"',
+		link: "https://maps.app.goo.gl/LSwQp6s1axxcJnVs9",
+		mini_map:
+			"https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d5581.399807100705!2d115.4858495375404!3d-8.43641449429741!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zOMKwMjYnMTIuMyJTIDExNcKwMjknMTkuMCJF!5e0!3m2!1sen!2sid!4v1749797854542!5m2!1sen!2sid",
+		notes_content:
+			"gumitir flower is often used in religious ceremonies and is one of those things that i forget it even existed despite its very common flower here. suddenly one day i spotted them in a batch just on the side of the road, like in this picture. not really a flower person, but i really like the smell of any flower-scented perfume. if i have to choose a favorite, it would be jasmine flower. it's calming and an iconic flower of Bali, i think? again, not a flower person.",
+	},
+	{
+		id: "grid-42",
+		image_title: "comfort",
+		location: "-8.18335, 114.91865",
+		description: "a safe and comforting place to nap",
+		link: "https://maps.app.goo.gl/BqTGPq9hUsJfNiMV9",
+		mini_map:
+			"https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3949.1925407909725!2d114.91607507482286!3d-8.18334999184803!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zOMKwMTEnMDAuMSJTIDExNMKwNTUnMDcuMSJF!5e0!3m2!1sen!2sid!4v1749798640225!5m2!1sen!2sid",
+		notes_content:
+			"unlike in the south, northern beach generally have a very calm water with little to no waves at all. this is my main beach when i was working around here in the Seririt region of Buleleng. i go almost every friday evening, bringing some food and drink and just chilling there. there is no particular unique thing about it. just a regular beach for regular people.",
+	},
+	{
+		id: "grid-41",
+		image_title: "preserve",
+		location: "-8.16297, 114.48536",
+		description: "it's not the westernmost part of the island, but it's good enough",
+		link: "https://maps.app.goo.gl/oCoSsR7ptfThbWoLA",
+		mini_map:
+			"https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3949.394297576983!2d114.48278507482254!3d-8.16296999186778!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zOMKwMDknNDYuNyJTIDExNMKwMjknMDcuMyJF!5e0!3m2!1sen!2sid!4v1749799393513!5m2!1sen!2sid",
+		notes_content:
+			"on my tour to the west of the island, i couldn't decide where i would go. then, when i looked at the map, i found something i wanted to visit. the national park that is home to unique bird species and wildlife in general. i later found out that you need special permission to enter, and because they want to preserve the nature and whatnot, there's only a dirt road with a lot of rocks that would damage a common scooter. so i gave up at the entrance and took this photo instead. still, it is a beautiful park.",
+	},
+	{
+		id: "grid-40",
+		image_title: "structure",
+		location: "-8.26386, 115.09104",
+		description: "i'd love to set up a camp here one day",
+		link: "https://maps.app.goo.gl/8ZEitx3uVhvQPGQG6",
+		mini_map:
+			"https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d987.097709121642!2d115.09084161909202!3d-8.263839050384538!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zOMKwMTUnNDkuOSJTIDExNcKwMDUnMjcuNyJF!5e0!3m2!1sen!2sid!4v1749800067668!5m2!1sen!2sid",
+		notes_content:
+			"one of the four lakes that exist on the island, and at first i believe it is the most remote lake out of all of them. i actually failed to go there the first time because of extremely bad and cold weather. i didn’t have proper attire for the situation, so i turned back sad and wet. the day i finally was able to visit, i was quite shocked because there were people from all over the island camping here. it’s a camping place (didn’t expect that, to be honest) and the temple apparently is a popular spot to do pre-wedding photos. so it’s not as remote as i expected.",
+	},
 ];

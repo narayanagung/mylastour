@@ -27,8 +27,16 @@ const router = createRouter({
 			path: "/image/:id",
 			name: "gridDetails",
 			component: GridDetails,
+			meta: { scrollToTop: true },
 		},
 	],
+	// always scroll to top
+	scrollBehavior(to, from, savedPosition) {
+		if (to.meta.scrollToTop) {
+			return { top: 0 };
+		}
+		return savedPosition || false;
+	},
 });
 
 export default router;
